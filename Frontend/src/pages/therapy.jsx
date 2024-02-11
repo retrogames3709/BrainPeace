@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const mentalIllnessessoln = [
   {
     id: 1,
-    title: 'Anxiety Disorder',
+    title: 'Doctor 1',
     description: 'A mental health disorder characterized by excessive worry and fear.',
     image: 'https://www.calmclinic.com/storage/images/213/qoxihx/main/w1600.png' ,
     link: '/anxiety',
