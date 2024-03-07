@@ -27,7 +27,7 @@ import DepressionQuiz from "../pages/DepressionQuiz";
 import OCDQuiz from "../pages/OcdQuiz";
 import ADHDQuiz from "../pages/ADHDQuiz";
 import Therapy from "../pages/therapy";
-
+import Chat from "../pages/chat";
 const App = () => {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
@@ -38,12 +38,27 @@ const App = () => {
       window.location.pathname = "/login";
     });
   };
+  const[message,setMessage] = useState([
+    {
+      message: "Hello, How can I help you today?",
+      sender: "bot"
+    }
+  ])
+  const Send = async(message) =>{
+    const newmessage = {
+      message: message,
+      sender: "user"
 
+    }
+  
+
+}
   return (
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="chat" element={<Chat />} />
           <Route path="articles" element={<Articles />} />
           <Route path="anxiety" element={<Anxiety />} />
           <Route path="depression" element={<Depression />} />

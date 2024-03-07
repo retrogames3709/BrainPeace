@@ -29,6 +29,10 @@ const getMenuItems = () => {
           title: 'Initiatives',
           url: 'initiatives',
         },
+        {
+          title: 'Chat',
+          url: 'chat',
+        },
       ],
     },
     {

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Logoslider from '../components/Logoslider';
 import Home_info from '../components/Home_info';
 import img1 from '../images/BrainPeace11.png';
 
@@ -51,14 +50,12 @@ const Home = () => {
          <div className='home-project-intro'>
         <p>
           We hope you enjoy our jokes as much as we do. 
-          Sukoon has many such resources to make you smile even when you feel you can't. We also offer a variety of other resources to help you 
+          BrainPeace has many such resources to make you smile even when you feel you can't. We also offer a variety of other resources to help you 
           understand yourself better. After all we all deserve to know what is going inside us. 
         </p>
         </div>
 
         <Home_info />
-{/* 
-        <Logoslider /> */}
         </div>
       </div>
     );
