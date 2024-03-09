@@ -1526,7 +1526,108 @@ body.light-mode {
   justify-content: center;
   align-items: end;
 }
+.content {
+  background-color: #e6f7ff; /* Light blue background */
+}
+#root{
+  background-color: #e6f7ff ;
+}
 
 .message-text {
+  color: #333; /* Dark text color */
+}
+.chat-log div{
+  margin: 10px;
+}
+.cp_container {
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #b3b3b3;
+  border-radius: 20px; /* Light gray border */
+  /* background-color: #ffffff; White background */
+  background-color: #f2f2f2; }
+
+/* Style the chat log */
+.chat-log {
+  border: 1px solid #b3b3b3;
+  padding: 10px;
+  height: 1000px;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 20px; /* Light gray border */
+
+  background-color: #f2f2f2; /* Light gray background for the chat log */
+}
+.cp_container input{
+  margin: 50px;
+}
+
+/* Style the input field */
+input[type="text"] {
+  width: calc(100% - 70px); /* Adjust the width based on your design */
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;height: 70px;
+
+}
+
+/* Style the button */
+/* button {
+  padding: 8px 15px;
+  margin: 10px 0;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #ddd; 
+  color: #fff; 
+}
+
+button:hover {
+  background-color: #45a049; 
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.cp_container button{
+  padding: 8px 15px;
+  margin: 10px 0;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #0056b3; 
   color: #fff;
+
+}
+.cp_container button:hover{
+  background-color: #00cc88;
+}
+.cp_container button:active{
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+@media only screen and (max-width: 950px) {
+  .cp_container {
+    width: 50%;
+  }
+
+  /* Adjust other styles for better mobile view */
+  
+
+  input[type="text"] {
+    width: calc(100% - 20px);
+  }
 }
