@@ -21,10 +21,29 @@ function Login({ setIsAuth }) {
 
   return (
     <div className="loginPage">
-      <p>Sign In With Google to Continue</p>
-      <button className="login-with-google-btn" onClick={signInWithGoogle}>
-        Sign in with Google
-      </button>
+      <header className="login-header">
+        <h1>Welcome to BrainPeace</h1>
+        <p>Please sign in with Google to continue.</p>
+      </header>
+      <div className="login-content">
+        <button className="login-with-google-btn" onClick={signInWithGoogle}>
+          
+          Sign in with Google
+        </button>
+      </div>
+      <footer className="login-footer">
+        <p>
+          By signing in, you agree to our{" "}
+          <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+            Privacy Policy
+          </a>{" "}
+          and{" "}
+          <a href="/terms-of-service" target="_blank" rel="noopener noreferrer">
+            Terms of Service
+          </a>
+          .
+        </p>
+      </footer>
     </div>
   );
 }

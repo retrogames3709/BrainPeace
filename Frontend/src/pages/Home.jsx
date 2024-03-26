@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Home_info from '../components/Home_info';
-import img1 from '../images/BrainPeace11.png';
+import img1 from '../images/BrainPeace old.png';
 
 
 const Home = () => {
