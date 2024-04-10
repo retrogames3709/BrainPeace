@@ -41,7 +41,7 @@ nav {
   margin: 0;
   width: 100%;
   height: 80px;
-  background-color: rgb(255, 255, 255);
+  background-color: #E6E6FA;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,13 +62,14 @@ header {
 }
 
 .nav-area {
-  background-color: #ffffff;
+  background-color: #E6E6FA;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1600px;
   margin: 0 auto;
   padding: 10px 20px;
+  height: 100px;
 }
 
 .logo img {
@@ -119,9 +120,8 @@ header {
 
 .menu-items a:hover,
 .menu-items button:hover {
-  background-color: #ffffff;
+  background-color: #E6E6FA;
   font-size: 25px;
-  color: #cc3852;
 }
 
 .arrow::after {
@@ -145,7 +145,7 @@ header {
   min-width: 10rem;
   padding: 0.5rem 0;
   list-style: none;
-  background-color: #fff;
+  background-color: #E6E6FA;
   border-radius: 0.5rem;
   display: none;
 }
@@ -219,21 +219,65 @@ button span {
 }
 
 .footer-links {
-  margin-top: 20px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row; /* Change flex direction to row */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 0 100px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer-links a {
   color: white;
   text-decoration: none;
-  margin: 0 20px;
-  font-size: 18px;
+  font-weight: bold;
+ 
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-sociallinks {
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end ;
+  padding: 0 100px;
+}
+
+.footer-sociallinks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-sociallinks li {
+  margin-bottom: 10px;
+}
+
+.footer-sociallinks a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
 }
 
+.footer-disclaimer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
 .footer-copyright {
   margin-top: 20px;
   font-size: 14px;
 }
+
 
 .home-allcontent {
   margin-top: 20px;
@@ -248,7 +292,7 @@ button span {
 
 .home-page {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255);
 }
 
 .marquee {
@@ -289,7 +333,7 @@ button span {
 
 .random-joke-header {
   margin-top: 70px;
-  background-image: url("./images/jokebg.jpeg");
+  background-image:rgb(255,255,255);
   padding: 30px; /* Increased padding for more height */
   color: black;
   display: flex;
@@ -757,11 +801,54 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+
 }
 
 .loginPage p {
   font-size: 30px;
 }
+
+/* Login Header */
+.loginPage .login-header {
+  text-align: center;
+  margin-bottom: 30px; /* Add spacing below the header */
+}
+
+.loginPage .login-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.loginPage .login-header p {
+  font-size: 18px;
+}
+
+/* Login Content */
+.loginPage .login-content {
+  text-align: center;
+}
+
+/* Login Footer */
+.loginPage .login-footer {
+  text-align: center;
+  margin-top: 30px; /* Add spacing above the footer */
+}
+
+.loginPage .login-footer p {
+  font-size: 14px;
+}
+
+.loginPage .login-footer a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  margin: 0 5px; /* Add spacing between links */
+}
+
+.loginPage .login-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
 
 /* Google Button */
 .loginPage .login-with-google-btn {
@@ -1003,7 +1090,7 @@ blockquote {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-image: url(./images/contactBackground.jpg);
+  /* background-image: url(./images/contactBackground.jpg); */
   /* background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo.jpg"); Replace with the actual path to your image */
   background-size: cover;
   background-position: center;
@@ -1013,7 +1100,7 @@ blockquote {
 .contact-info {
   flex: 1;
   padding: 2rem;
-  background-image: url(./images/formbackground.jpg);
+  /* background-image: url(./images/formbackground.jpg); */
   /* background-image: url("https://t4.ftcdn.net/jpg/05/08/85/65/360_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg"); Replace with the actual path to your background image */
   background-size: cover;
   background-color: white;
@@ -1049,7 +1136,7 @@ blockquote {
 .contact-form {
   flex: 1;
   padding: 2rem;
-  background-image: url("https://t4.ftcdn.net/jpg/05/08/85/65/360_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg"); /* Replace with the actual path to your background image */
+  /* background-image: url("https://t4.ftcdn.net/jpg/05/08/85/65/360_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg"); Replace with the actual path to your background image */
   background-size: cover; /* Cover the entire element */
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -1087,7 +1174,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #ffcccc;
+  background-color: #007bff;
 }
 
 .contact-form,
@@ -1122,6 +1209,7 @@ button[type="submit"]:hover {
   animation-delay: 0.2s; /* Delay the animation slightly */
 }
 
+
 /* Mental Health Carousel styles (Articles Main Page) */
 
 .carousel {
@@ -1130,6 +1218,7 @@ button[type="submit"]:hover {
   gap: 20px;
   padding: 20px;
 }
+
 
 .carousel-item {
   display: flex;
@@ -1141,6 +1230,7 @@ button[type="submit"]:hover {
   padding: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .carousel-item img {
   width: 100%;
@@ -1156,7 +1246,16 @@ button[type="submit"]:hover {
 .carousel-item p {
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #666;
+  color: #000000;
+}
+.carousel-item {
+  /* Existing styles */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth animation */
+}
+
+.carousel-item:hover {
+  transform: translateY(-10px); /* Move the item slightly upwards on hover */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); Increase shadow on hover */
 }
 
 .read-more {
@@ -1351,8 +1450,8 @@ button[type="submit"]:hover {
 .about-us {
   text-align: center;
   padding: 40px;
-  background-color: #ffb6c1;
-  background-image: url("https://images.template.net/94766/pastel-pink-background-yw0ub.jpg");
+  background-color: #ffffff;
+  /* background-image: url("https://images.template.net/94766/pastel-pink-background-yw0ub.jpg"); */
 }
 
 .founders {
@@ -1432,3 +1531,206 @@ button[type="submit"]:hover {
   font-size: 16px;
   color: #777;
 }
+.message.user {
+  align-self: flex-end;
+  background-color: #bdc2ce;
+  color: #000;
+}
+
+.message.user p {
+  color: #000;
+}
+
+.message.ai {
+  align-self: flex-start;
+  background-color: #333;
+  color: #fff;
+}
+
+.message.ai p {
+  color: #fff;
+}
+
+.time {
+  font-size: 12px;
+  color: #fff;
+}
+
+.time.user {
+  color: #000;
+}
+
+.input-box {
+  margin-top: 10px;
+}
+
+/* Updated styles for dark mode and full screen */
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.chat-window {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  padding: 20px;
+}
+
+.chat-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #616060;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Full Screen */
+.full-screen .chat-window {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Additional styles for header */
+.header {
+  text-align: center;
+  /* background-color: #333; */
+  color: #fff;
+  padding: 20px;
+  padding-top: 5px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#chat-header {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.content {
+  background-color: #ffffff; /* Light blue background */
+}
+#root{
+  background-color: #e6f7ff ;
+}
+
+.message-text {
+  color: #333; /* Dark text color */
+}
+.chat-log div{
+  margin: 10px;
+}
+.cp_container {
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #b3b3b3;
+  border-radius: 20px; /* Light gray border */
+  /* background-color: #ffffff; White background */
+  background-color: #f2f2f2; }
+    
+
+/* Style the chat log */
+.chat-log {
+  border: 1px solid #b3b3b3;
+  padding: 10px;
+  height: 1000px;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 20px; /* Light gray border */
+
+  background-color: #f2f2f2; /* Light gray background for the chat log */
+}
+.cp_container input{
+  margin: 50px;
+}
+
+/* Style the input field */
+input[type="text"] {
+  width: calc(100% - 70px); /* Adjust the width based on your design */
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;height: 70px;
+
+}
+
+/* Style the button */
+/* button {
+  padding: 8px 15px;
+  margin: 10px 0;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #ddd; 
+  color: #fff; 
+}
+
+button:hover {
+  background-color: #45a049; 
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.cp_container button{
+  padding: 8px 15px;
+  margin: 10px 0;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #0056b3; 
+  color: #fff;
+
+}
+.cp_container button:hover{
+  background-color: #00cc88;
+}
+.cp_container button:active{
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+@media only screen and (max-width: 950px) {
+  .cp_container {
+    width: 50%;
+  }
+
+  /* Adjust other styles for better mobile view */
+  
+
+  input[type="text"] {
+    width: calc(100% - 20px);
+  }
+}
+
+
